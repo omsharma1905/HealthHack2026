@@ -93,7 +93,7 @@ To deploy your website (Frontend Only):
 ## 🧑‍💻 Credits
 
 **Developed by:**  
-OM SHARMA | SHAILENDRA SINGH SHAKTAWAT  
+Dr. Hemraj S Lamkuche | OM SHARMA | SHAILENDRA SINGH SHAKTAWAT  
 Team Health Hack 2026 — VIT Bhopal University × Johns Hopkins Whiting School of Engineering
 
 **Contributors:**  
