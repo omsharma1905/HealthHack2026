@@ -352,7 +352,7 @@ body {
 /* Advantages Grid */
 .advantages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -378,32 +378,82 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Learning Outcomes */
+/* Center the 4th card below the 2nd card */
+.advantage-card:nth-child(4) {
+    grid-column: 2 / 3; /* Places card in center column */
+}
+
+@media (max-width: 992px) {
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .advantage-card:nth-child(4) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    .advantage-card:nth-child(4) {
+        max-width: 100%;
+    }
+}
+
+/* ========================================
+   LEARNING OUTCOMES SECTION
+   ======================================== */
+
 .outcomes-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+/* Center the 4th item below the 2nd */
+.outcome-item:nth-child(4) {
+    grid-column: 2 / 3;
 }
 
 .outcome-item {
-    background: rgba(0, 229, 255, 0.05);
-    padding: 1.5rem;
-    border-radius: 12px;
-    border-left: 4px solid var(--accent-cyan);
-    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 1.4rem 1.6rem;
+    border-radius: 18px;
+    border: 2px solid rgba(0, 229, 255, 0.2);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .outcome-item:hover {
-    background: rgba(0, 229, 255, 0.1);
-    transform: translateX(10px);
+    transform: translateY(-6px);
+    box-shadow: 0 0 28px rgba(0, 229, 255, 0.45);
 }
 
-.outcome-item::before {
-    content: '✓';
-    color: var(--accent-cyan);
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-right: 1rem;
+@media (max-width: 992px) {
+    .outcomes-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .outcome-item:nth-child(4) {
+        grid-column: 1 / -1;
+        max-width: 80%;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .outcomes-list {
+        grid-template-columns: 1fr;
+    }
+    .outcome-item:nth-child(4) {
+        max-width: 100%;
+    }
 }
 
 /* Schedule Table */
