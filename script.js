@@ -142,6 +142,27 @@ if (trackSearch) {
     });
 }
 
+// Smooth stagger animation fix for track cards
+function applyTrackStagger() {
+    const cards = document.querySelectorAll(".track-card:not(.hidden)");
+    cards.forEach((card, i) => {
+        card.style.setProperty("--delay", `${i * 0.06}s`);
+        card.style.animation = "none";
+        void card.offsetWidth; // Restart animation
+        card.style.animation = "";
+    });
+}
+
+applyTrackStagger();
+
+// Re-run animation after filtering
+document.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+        setTimeout(applyTrackStagger, 50);
+    });
+});
+
+
 // ========================================
 // ACCORDION FUNCTIONALITY
 // ========================================
