@@ -80,7 +80,7 @@ function initScrollAnimations() {
 
   const animatedElements = document.querySelectorAll('.sp-highlight-card, .sp-reason-card');
   animatedElements.forEach((element, index) => {
-    element.style.transitionDelay = `${index * 0.1}s`;
+    element.style.transitionDelay = `${index * 0.0}s`;
     observer.observe(element);
   });
 }
