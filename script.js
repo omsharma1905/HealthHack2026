@@ -543,7 +543,7 @@ console.log(`
 ║       Improving Health Access for All     ║
 ║                                           ║
 ║       VIT Bhopal × Johns Hopkins          ║
-║       Designed by OM SHARMA               ║
+║       Designed by Team HEALTH HACK        ║
 ║                                           ║
 ╚═══════════════════════════════════════════╝
 `);
