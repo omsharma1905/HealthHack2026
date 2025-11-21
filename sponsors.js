@@ -1,5 +1,4 @@
 // Health Hack 2026
-// Author: OM SHARMA
 
 document.addEventListener('DOMContentLoaded', () => {
   initHamburgerMenu();

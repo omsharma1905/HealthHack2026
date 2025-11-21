@@ -1,7 +1,4 @@
-/**
- * Health Hack 2026 - JavaScript
- * Author: OM SHARMA
- */
+// Health Hack 2026 - JavaScript
 
 // ========================================
 // NAVBAR SCROLL EFFECT
