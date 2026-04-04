@@ -3,8 +3,6 @@
 > **Improving Health Access for All**  
 > A collaborative international health hackathon organized by **VIT Bhopal University** in association with **Johns Hopkins Whiting School of Engineering (USA)**.
 
-
-
 ---
 
 ## 🚀 Overview
