@@ -120,3 +120,7 @@ Special thanks to:
 ---
 
 > 💡 *“Innovating Healthcare, Empowering Humanity.”*
+
+---
+
+Hackathon is Over/Completed
