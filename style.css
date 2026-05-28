@@ -1053,10 +1053,6 @@ section {
     }
 }
 
-/* ========================================
-   EVENT DETAILS
-   ======================================== */
-
 .event-details-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1139,11 +1135,6 @@ section {
     color: #333;
 }
 
-/* ========================================
-   IMPROVED PRIZE TAB + QR STYLING
-   ======================================== */
-
-/* Smooth hover glow for each prize box */
 .improved-prize {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1157,13 +1148,11 @@ section {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Add subtle divider & spacing */
 .improved-prize-list {
   gap: 1.2rem;
   margin-top: 1rem;
 }
 
-/* Medal pop animation */
 .prize-medal {
   font-size: 2.2rem;
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
@@ -1173,7 +1162,6 @@ section {
   transform: scale(1.15) rotate(-5deg);
 }
 
-/* QR image refinement */
 .qr-code img {
   width: 150px;
   height: 150px;
@@ -1189,10 +1177,6 @@ section {
   transform: scale(1.05);
   box-shadow: 0 0 35px rgba(0, 255, 255, 0.7);
 }
-
-/* ========================================
-   PROBLEM STATEMENTS TABLE
-   ======================================== */
 
 .table-container {
     overflow-x: auto;
@@ -1233,10 +1217,6 @@ tr:hover {
     background: rgba(0, 229, 255, 0.05);
 }
 
-/* ========================================
-   ABOUT SECTIONS
-   ======================================== */
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1272,10 +1252,6 @@ tr:hover {
     grid-column: span 2;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
-
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -1295,10 +1271,6 @@ tr:hover {
         font-size: 1rem;
     }
 }
-
-/* ========================================
-   GUIDELINES / ACCORDION
-   ======================================== */
 
 .guidelines-grid {
     display: grid;
@@ -1370,10 +1342,6 @@ tr:hover {
     margin-bottom: 0.5rem;
 }
 
-/* ========================================
-   NEWS FEED
-   ======================================== */
-
 .news-carousel {
     display: flex;
     gap: 2rem;
@@ -1410,10 +1378,6 @@ tr:hover {
     margin-bottom: 1rem;
 }
 
-/* ========================================
-   GALLERY
-   ======================================== */
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1432,7 +1396,6 @@ tr:hover {
   cursor: pointer;
 }
 
-/* Image inside the gallery item */
 .gallery-item img {
   width: 100%;
   height: 100%;
@@ -1440,7 +1403,6 @@ tr:hover {
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-/* Soft overlay effect */
 .gallery-item::after {
   content: "";
   position: absolute;
@@ -1454,7 +1416,6 @@ tr:hover {
   border-radius: 16px;
 }
 
-/* Hover animations */
 .gallery-item:hover img {
   transform: scale(1.08);
   filter: brightness(1.1);
@@ -1468,7 +1429,6 @@ tr:hover {
   box-shadow: 0 8px 32px rgba(0, 229, 255, 0.3);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .gallery-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -1481,17 +1441,12 @@ tr:hover {
   }
 }
 
-/* ========================================
-   CONTACT
-   ======================================== */
-
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
 
-/* Contact Form (Left) */
 .contact-form {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
@@ -1543,7 +1498,6 @@ tr:hover {
   left: -9999px;
 }
 
-/* Contact Info (Right) → 2x2 Responsive Grid */
 .contact-info {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
@@ -1561,7 +1515,6 @@ tr:hover {
   color: var(--neon-cyan);
 }
 
-/* Coordinator Box Styling */
 .coordinator {
   margin-bottom: 0.875rem;
   padding-bottom: 0.875rem;
@@ -1599,10 +1552,6 @@ tr:hover {
     grid-template-columns: 1fr;
   }
 }
-
-/* ========================================
-   FOOTER
-   ======================================== */
 
 footer {
     background: linear-gradient(135deg, rgba(0, 27, 255, 0.3), rgba(58, 13, 138, 0.3));
@@ -1666,10 +1615,6 @@ footer {
     color: var(--text-muted);
 }
 
-/* ========================================
-   SCROLL TO TOP BUTTON
-   ======================================== */
-
 .scroll-top {
     position: fixed;
     bottom: 2rem;
@@ -1698,10 +1643,6 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 6px 25px rgba(0, 229, 255, 0.6);
 }
-
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
 
 @media (max-width: 1024px) {
     .nav-links {
@@ -1801,10 +1742,6 @@ footer {
     }
 }
 
-/* ========================================
-   REDUCED MOTION (Accessibility)
-   ======================================== */
-
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -1815,11 +1752,6 @@ footer {
     }
 }
 
-/* ========================================
-   PERFORMANCE + MOBILE OPTIMIZATION FIXES
-   ======================================== */
-
-/* Reduce blur intensity on smaller screens */
 @media (max-width: 768px) {
   .detail-card,
   .accordion,
