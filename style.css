@@ -418,10 +418,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 6px 20px rgba(255, 156, 46, 0.6);
 }
 
-/* ============================
-   HERO QR - Clean Glassmorphic Design
-   ============================ */
-
 .hero-qr {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px) saturate(180%);
@@ -446,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-qr img {
-  width: 250px;              /* same as old original */
+  width: 250px;
   height: 250px;
   border-radius: 22px;
   background: #fff;
@@ -470,10 +466,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5px;
 }
 
-/* ========================================
-   GLASS CARD BASE
-   ======================================== */
-
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
@@ -494,10 +486,6 @@ h1, h2, h3, h4, h5, h6 {
         0 0 50px rgba(127, 0, 255, 0.15);
 }
 
-/* ========================================
-   SECTION BASE
-   ======================================== */
-
 section {
     padding: 6rem 2rem;
     position: relative;
@@ -517,10 +505,6 @@ section {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
-/* ========================================
-   OVERVIEW SECTION
-   ======================================== */
 
 #overview {
     padding-top: 8rem;
@@ -555,10 +539,6 @@ section {
     text-align: center;
     margin-top: 2rem;
 }
-
-/* ========================================
-   COMMITTEES SECTION
-   ======================================== */
 
 .committee-tabs {
     display: flex;
@@ -596,7 +576,6 @@ section {
     animation: fadeInUp 0.5s ease-out;
 }
 
-/* Large Committee Cards */
 .large-committee-grid {
     display: grid;
     gap: 2rem;
@@ -717,7 +696,6 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Search Box */
 .search-filter {
     max-width: 500px;
     margin: 0 auto 2rem;
@@ -746,10 +724,6 @@ section {
     box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
 }
 
-/* ========================================
-   TRACKS SECTION - FIXED & IMPROVED
-   ======================================== */
-
 .filter-chips {
     display: flex;
     gap: 1rem;
@@ -776,14 +750,12 @@ section {
     border-color: var(--neon-cyan);
 }
 
-/* Cards Grid */
 .tracks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-/* Track Card */
 .track-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
@@ -793,7 +765,6 @@ section {
     cursor: pointer;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 
-    /* Smooth slide animation */
     opacity: 0;
     transform: translateY(40px);
     animation: trackFade 0.6s ease-out forwards;
@@ -813,7 +784,6 @@ section {
     }
 }
 
-/* Hover */
 .track-card:hover {
     transform: translateY(-6px) scale(1.03);
     box-shadow:
@@ -822,7 +792,6 @@ section {
         0 0 50px rgba(127, 0, 255, 0.15);
 }
 
-/* Icon */
 .track-icon {
     width: 60px;
     height: 60px;
@@ -856,10 +825,6 @@ section {
     font-size: 0.85rem;
     font-weight: 600;
 }
-
-/* ========================================
-   TIMELINE - VERTICAL DESIGN
-   ======================================== */
 
 .timeline-wrapper {
     max-width: 900px;
@@ -955,15 +920,6 @@ section {
         box-shadow: 0 0 50px var(--neon-cyan), 0 0 80px var(--electric-violet);
     }
 }
-
-/* .milestone-number {
-    margin-top: 0.5rem;
-    margin-left: 15px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--neon-cyan);
-    font-family: 'Poppins', sans-serif;
-} */
 
 .milestone-content {
     background: rgba(255, 255, 255, 0.05);
@@ -1069,9 +1025,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    /* ... your existing mobile styles ... */
-    
-    /* Timeline Mobile Styles - Add these */
     .timeline-vertical {
         padding-left: 50px;
     }
