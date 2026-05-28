@@ -1,5 +1,3 @@
-// Health Hack 2026
-
 document.addEventListener('DOMContentLoaded', () => {
   initHamburgerMenu();
   initSmoothScroll();
