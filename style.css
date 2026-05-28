@@ -1761,18 +1761,16 @@ footer {
   .about-image,
   .timeline-content,
   .hero-qr {
-    backdrop-filter: blur(4px); /* lighter for speed */
+    backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.08);
   }
 }
 
-/* Improve text contrast on glass backgrounds */
 :root {
-  --text-muted: rgba(240, 240, 240, 0.85); /* slightly brighter */
-  --text-heading: #ffffff; /* pure white headings */
+  --text-muted: rgba(240, 240, 240, 0.85);
+  --text-heading: #ffffff;
 }
 
-/* Optional: smoother GPU rendering hint */
 * {
   will-change: transform, opacity;
 }
