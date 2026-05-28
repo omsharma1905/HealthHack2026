@@ -1,9 +1,3 @@
-/* Health Hack 2026 */
-
-/* ========================================
-   RESET & BASE STYLES
-   ======================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -40,10 +34,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* ========================================
-   SKIP LINK (Accessibility)
-   ======================================== */
-
 .skip-link {
     position: absolute;
     top: -40px;
@@ -58,10 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 .skip-link:focus {
     top: 0;
 }
-
-/* ========================================
-   NAVBAR
-   ======================================== */
 
 .navbar {
     position: fixed;
@@ -85,19 +71,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo {
-    /* font-size: 1.2rem; */
-    /* font-weight: 700; */
     color: var(--text-heading);
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* space between logo and text */
+    gap: 0.5rem;
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 .nav-logo-img {
-  width: 40px; /* adjust as needed */
+  width: 40px;
   height: 40px;
   object-fit: contain;
   border-radius: 50%;
@@ -162,10 +146,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
-/* ========================================
-   HERO SECTION
-   ======================================== */
 
 .hero {
     min-height: 100vh;
