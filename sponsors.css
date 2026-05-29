@@ -455,10 +455,6 @@ body {
   line-height: 1.7;
 }
 
-/* ========================================
-   BENEFITS SECTION
-   ======================================== */
-
 .sp-benefits-section {
   background: rgba(0, 0, 0, 0.25);
 }
@@ -549,10 +545,6 @@ body {
   display: none;
 }
 
-/* ========================================
-   STALLS SECTION
-   ======================================== */
-
 .sp-stalls-section {
   background: rgba(255, 255, 255, 0.03);
 }
@@ -625,10 +617,6 @@ body {
   line-height: 1.7;
 }
 
-/* ========================================
-   PREVIOUS SPONSORS SECTION
-   ======================================== */
-
 .sp-previous-sponsors-section {
   padding: 4rem 0;
   background: rgba(255, 255, 255, 0.03);
@@ -665,7 +653,6 @@ body {
       0 0 18px rgba(127, 0, 255, 0.18);
 }
 
-/* Sponsor Logo Box */
 .sp-sponsor-placeholder {
   width: 100%;
   height: 110px;
@@ -679,7 +666,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Sponsor Image */
 .sp-sponsor-placeholder img {
   width: 100%;
   height: 100%;
@@ -692,7 +678,6 @@ body {
   transform: scale(1.07);
 }
 
-/* Sponsor Label */
 .sp-sponsor-label {
   margin-top: 0.6rem;
   font-size: 0.95rem;
@@ -700,12 +685,6 @@ body {
   font-weight: 600;
   letter-spacing: 0.3px;
 }
-
-
-
-/* =============================
-    RESPONSIVE FIXES
-   ============================= */
 
 @media (max-width: 768px) {
   .sp-sponsor-placeholder {
@@ -722,10 +701,6 @@ body {
     height: 85px;
   }
 }
-
-/* ========================================
-   CTA SECTION
-   ======================================== */
 
 .sp-cta-section {
   background: linear-gradient(135deg, rgba(0, 27, 255, 0.3), rgba(127, 0, 255, 0.3));
@@ -764,10 +739,6 @@ body {
   padding: 1.2rem 2.5rem;
   font-size: 1.1rem;
 }
-
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
 
 .sp-contact-section {
   background: rgba(0, 0, 0, 0.25);
@@ -888,10 +859,6 @@ body {
   color: var(--sp-text-heading);
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
-
 .sp-footer {
   background: rgba(0, 0, 0, 0.4);
   border-top: 1px solid var(--sp-neon-cyan);
@@ -929,10 +896,6 @@ body {
 .sp-footer-right a:hover {
   color: var(--sp-neon-cyan);
 }
-
-/* ========================================
-   RESPONSIVE - TABLET
-   ======================================== */
 
 @media (max-width: 768px) {
   .sp-hamburger {
