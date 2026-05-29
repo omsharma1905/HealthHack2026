@@ -1031,10 +1031,6 @@ body {
   }
 }
 
-/* ========================================
-   RESPONSIVE - MOBILE
-   ======================================== */
-
 @media (max-width: 480px) {
   .sp-brand-text {
     font-size: 0.9rem;
@@ -1081,10 +1077,6 @@ body {
   }
 }
 
-/* ========================================
-   ACCESSIBILITY
-   ======================================== */
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1094,10 +1086,6 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* ========================================
-   UTILITY CLASSES
-   ======================================== */
 
 .visible {
   opacity: 1 !important;
