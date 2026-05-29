@@ -1,9 +1,3 @@
-/* Health Hack 2026 */
-
-/* ========================================
-   CSS VARIABLES & BASE STYLES
-   ======================================== */
-
 :root {
   --sp-deep-blue: #001BFF;
   --sp-indigo: #3A0D8A;
@@ -48,10 +42,6 @@ body {
   margin: 0 auto;
   padding: 0 var(--sp-spacing-md);
 }
-
-/* ========================================
-   NAVIGATION BAR
-   ======================================== */
 
 .sp-navbar {
   position: fixed;
@@ -186,10 +176,6 @@ body {
 .sp-hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -7px);
 }
-
-/* ========================================
-   HERO SECTION
-   ======================================== */
 
 .sp-hero-section {
   margin-top: 80px;
@@ -333,10 +319,6 @@ body {
   }
 }
 
-/* ========================================
-   SECTION COMMON STYLES
-   ======================================== */
-
 .sp-main-content section {
   padding: var(--sp-spacing-xxl) 0;
 }
@@ -348,10 +330,6 @@ body {
   text-align: center;
   margin-bottom: var(--sp-spacing-lg);
 }
-
-/* ========================================
-   OVERVIEW SECTION
-   ======================================== */
 
 .sp-overview-section {
   background: rgba(0, 0, 0, 0.2);
@@ -418,10 +396,6 @@ body {
   color: var(--sp-text-muted);
   line-height: 1.5;
 }
-
-/* ========================================
-   WHY SPONSOR SECTION
-   ======================================== */
 
 .sp-why-sponsor-section {
   background: rgba(255, 255, 255, 0.03);
