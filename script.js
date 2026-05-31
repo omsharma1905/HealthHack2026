@@ -361,21 +361,7 @@ window.addEventListener('error', (e) => {
     console.error('An error occurred:', e.error);
 });
 
-// ========================================
-// CONSOLE MESSAGE
-// ========================================
 
-console.log(`
-╔═══════════════════════════════════════════╗
-║                                           ║
-║       HEALTH HACK 2026                    ║
-║       Improving Health Access for All     ║
-║                                           ║
-║       VIT Bhopal × Johns Hopkins          ║
-║       Designed by Team HEALTH HACK        ║
-║                                           ║
-╚═══════════════════════════════════════════╝
-`);
 
 // ========================================
 // EXPORT FOR TESTING (if needed)
