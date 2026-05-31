@@ -271,29 +271,6 @@ const galleryItems = document.querySelectorAll('.gallery-item');
 galleryItems.forEach(item => {
     item.addEventListener('click', () => {
         console.log('Gallery item clicked');
-        
-        /* 
-        // Example: Simple lightbox
-        const lightbox = document.createElement('div');
-        lightbox.className = 'lightbox';
-        lightbox.innerHTML = `
-            <div class="lightbox-content">
-                <span class="lightbox-close">&times;</span>
-                <img src="${item.dataset.src}" alt="${item.dataset.alt}">
-            </div>
-        `;
-        document.body.appendChild(lightbox);
-        
-        lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
-            lightbox.remove();
-        });
-        */
-    });
-});
-
-// ========================================
-// TIMELINE ANIMATION ON SCROLL
-// ========================================
 
 const timelineDots = document.querySelectorAll('.timeline-dot');
 
@@ -307,38 +284,20 @@ const timelineObserver = new IntersectionObserver((entries) => {
 
 timelineDots.forEach(dot => timelineObserver.observe(dot));
 
-// ========================================
-// LAZY LOAD ANIMATIONS FOR CARDS
-// ========================================
-
 const cards = document.querySelectorAll('.glass-card, .track-card, .large-committee-card');
 
 cards.forEach((card, index) => {
     card.style.animationDelay = `${index * 0.1}s`;
 });
 
-// ========================================
-// PREFERS-REDUCED-MOTION CHECK
-// ========================================
-
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 if (prefersReducedMotion.matches) {
-    // Disable all animations for users who prefer reduced motion
     document.querySelectorAll('*').forEach(el => {
         el.style.animation = 'none';
         el.style.transition = 'none';
     });
 }
-
-// ========================================
-// UTILITY FUNCTIONS
-// ========================================
-
-/**
- * Debounce function to limit how often a function can fire
- * Useful for scroll and resize events
- */
 function debounce(func, wait = 20, immediate = true) {
     let timeout;
     return function() {
@@ -355,9 +314,6 @@ function debounce(func, wait = 20, immediate = true) {
     };
 }
 
-/**
- * Throttle function to ensure a function is called at most once in a specified period
- */
 function throttle(func, limit) {
     let inThrottle;
     return function() {
@@ -370,12 +326,7 @@ function throttle(func, limit) {
         }
     };
 }
-
-// ========================================
-// KEYBOARD NAVIGATION ENHANCEMENT
-// ========================================
-
-// Improve keyboard navigation for interactive elements
+        
 document.querySelectorAll('.track-card, .committee-card, .news-card').forEach(card => {
     card.setAttribute('tabindex', '0');
     
@@ -386,25 +337,15 @@ document.querySelectorAll('.track-card, .committee-card, .news-card').forEach(ca
     });
 });
 
-// ========================================
-// INITIALIZE ON DOM LOAD
-// ========================================
-
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Health Hack 2026 website loaded successfully!');
     
-    // Set initial active nav link
     updateActiveNavLink();
     
-    // Add any additional initialization code here
 });
 
-// ========================================
-// WINDOW RESIZE HANDLER
-// ========================================
 
 window.addEventListener('resize', debounce(() => {
-    // Reset mobile menu on desktop
     if (window.innerWidth > 1024) {
         navLinks.style.display = '';
         navLinks.style.position = '';
@@ -414,21 +355,10 @@ window.addEventListener('resize', debounce(() => {
     }
 }));
 
-// ========================================
-// PERFORMANCE OPTIMIZATION
-// ========================================
-
-// Use passive event listeners for better scroll performance
 document.addEventListener('scroll', updateActiveNavLink, { passive: true });
-
-// ========================================
-// ERROR HANDLING
-// ========================================
 
 window.addEventListener('error', (e) => {
     console.error('An error occurred:', e.error);
-    // You can add custom error handling here
-    // For example, send errors to an analytics service
 });
 
 // ========================================
