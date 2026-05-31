@@ -1,31 +1,19 @@
-// Health Hack 2026 - JavaScript
-
-// ========================================
-// NAVBAR SCROLL EFFECT
-// ========================================
-
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
-    // Change navbar background on scroll
     if (currentScroll <= 0) {
         navbar.style.background = 'rgba(0, 27, 255, 0.1)';
     } else {
         navbar.style.background = 'rgba(0, 27, 255, 0.15)';
     }
     
-    // Update active nav link based on scroll position
     updateActiveNavLink();
     
     lastScroll = currentScroll;
 });
-
-// ========================================
-// UPDATE ACTIVE NAVIGATION LINK
-// ========================================
 
 function updateActiveNavLink() {
     const sections = document.querySelectorAll('section[id]');
@@ -50,10 +38,6 @@ function updateActiveNavLink() {
     });
 }
 
-// ========================================
-// SMOOTH SCROLL FOR ANCHOR LINKS
-// ========================================
-
 document.querySelectorAll('a[href^="index.html"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -68,10 +52,6 @@ document.querySelectorAll('a[href^="index.html"]').forEach(anchor => {
     });
 });
 
-// ========================================
-// COMMITTEE TABS FUNCTIONALITY
-// ========================================
-
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -79,7 +59,6 @@ tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const targetTab = btn.getAttribute('data-tab');
         
-        // Remove active class from all tabs
         tabBtns.forEach(b => b.classList.remove('active'));
         tabContents.forEach(c => c.classList.remove('active'));
         
@@ -89,10 +68,6 @@ tabBtns.forEach(btn => {
     });
 });
 
-// ========================================
-// TRACK FILTER FUNCTIONALITY
-// ========================================
-
 const filterChips = document.querySelectorAll('.chip');
 const trackCards = document.querySelectorAll('.track-card');
 
@@ -100,11 +75,9 @@ filterChips.forEach(chip => {
     chip.addEventListener('click', () => {
         const filter = chip.getAttribute('data-filter');
         
-        // Update active chip
         filterChips.forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
         
-        // Filter track cards
         trackCards.forEach(card => {
             if (filter === 'all') {
                 card.style.display = 'block';
@@ -115,10 +88,6 @@ filterChips.forEach(chip => {
         });
     });
 });
-
-// ========================================
-// TRACK SEARCH FUNCTIONALITY
-// ========================================
 
 const trackSearch = document.getElementById('trackSearch');
 
@@ -139,20 +108,18 @@ if (trackSearch) {
     });
 }
 
-// Smooth stagger animation fix for track cards
 function applyTrackStagger() {
     const cards = document.querySelectorAll(".track-card:not(.hidden)");
     cards.forEach((card, i) => {
         card.style.setProperty("--delay", `${i * 0.06}s`);
         card.style.animation = "none";
-        void card.offsetWidth; // Restart animation
+        void card.offsetWidth;
         card.style.animation = "";
     });
 }
 
 applyTrackStagger();
 
-// Re-run animation after filtering
 document.querySelectorAll(".chip").forEach(chip => {
     chip.addEventListener("click", () => {
         setTimeout(applyTrackStagger, 50);
