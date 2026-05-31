@@ -360,12 +360,3 @@ document.addEventListener('scroll', updateActiveNavLink, { passive: true });
 window.addEventListener('error', (e) => {
     console.error('An error occurred:', e.error);
 });
-
-
-
-// ========================================
-// EXPORT FOR TESTING (if needed)
-// ========================================
-
-// If you're using a module bundler, you can export functions
-// export { updateActiveNavLink, debounce, throttle };
