@@ -126,11 +126,6 @@ document.querySelectorAll(".chip").forEach(chip => {
     });
 });
 
-
-// ========================================
-// ACCORDION FUNCTIONALITY
-// ========================================
-
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
 accordionHeaders.forEach(header => {
@@ -138,22 +133,16 @@ accordionHeaders.forEach(header => {
         const item = header.parentElement;
         const isActive = item.classList.contains('active');
         
-        // Close all accordion items in the same accordion
         const accordion = item.parentElement;
         accordion.querySelectorAll('.accordion-item').forEach(i => {
             i.classList.remove('active');
         });
         
-        // Toggle current item
         if (!isActive) {
             item.classList.add('active');
         }
     });
 });
-
-// ========================================
-// CONTACT FORM SUBMISSION
-// ========================================
 
 const contactForm = document.getElementById('contactForm');
 
@@ -161,53 +150,18 @@ if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // Check honeypot (anti-spam)
         if (contactForm.honeypot.value) {
             return;
         }
         
-        // Get form data
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
         
-        // Here you would typically send data to your backend
-        // For now, we'll just log it and show a success message
         console.log('Form submitted:', data);
         
-        // Show success message
         alert('Thank you for your message! We will get back to you soon.');
         
-        // Reset form
         contactForm.reset();
-        
-        /* 
-        // Example: Send to backend API
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data)
-            });
-            
-            if (response.ok) {
-                alert('Thank you for your message!');
-                contactForm.reset();
-            } else {
-                alert('Something went wrong. Please try again.');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Something went wrong. Please try again.');
-        }
-        */
-    });
-}
-
-// ========================================
-// SCROLL TO TOP BUTTON
-// ========================================
 
 const scrollTop = document.getElementById('scrollTop');
 
@@ -226,10 +180,6 @@ scrollTop.addEventListener('click', () => {
     });
 });
 
-// ========================================
-// INTERSECTION OBSERVER FOR ANIMATIONS
-// ========================================
-
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -244,16 +194,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe sections for fade-in effect
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// ========================================
-// SEARCH FUNCTIONALITY FOR COMMITTEES
-// ========================================
-
-// Advisory Committee Search
 const advisorySearch = document.getElementById('advisorySearch');
 
 if (advisorySearch) {
@@ -274,7 +218,6 @@ if (advisorySearch) {
     });
 }
 
-// Faculty Coordinators Search
 const facultySearch = document.getElementById('facultySearch');
 
 if (facultySearch) {
@@ -293,10 +236,6 @@ if (facultySearch) {
         });
     });
 }
-
-// ========================================
-// MOBILE MENU TOGGLE
-// ========================================
 
 const mobileToggle = document.querySelector('.mobile-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -318,7 +257,6 @@ if (mobileToggle) {
         }
     });
     
-    // Close mobile menu when clicking on a link
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 1024) {
@@ -328,16 +266,10 @@ if (mobileToggle) {
     });
 }
 
-// ========================================
-// GALLERY LIGHTBOX (Basic Implementation)
-// ========================================
-
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 galleryItems.forEach(item => {
     item.addEventListener('click', () => {
-        // Placeholder for lightbox functionality
-        // You can implement a full lightbox modal here
         console.log('Gallery item clicked');
         
         /* 
