@@ -1,6 +1,4 @@
-// Health Hack 2026
 
-// Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -9,7 +7,6 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
         hamburger.classList.remove('active');
@@ -17,7 +14,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Close menu when clicking a nav link
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -25,7 +21,6 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-// Smooth scroll reveal animation
 const observerOptions = {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
@@ -43,7 +38,6 @@ document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
