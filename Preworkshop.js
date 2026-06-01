@@ -51,7 +51,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add stagger animation to cards
 const cards = document.querySelectorAll('.advantage-card, .outcome-item, .exposure-card');
 cards.forEach((card, index) => {
     card.style.animationDelay = `${index * 0.1}s`;
