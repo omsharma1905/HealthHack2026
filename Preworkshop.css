@@ -544,11 +544,6 @@ tr:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ========================
-   RESPONSIVE DESIGN
-   ======================== */
-
-/* Tablet */
 @media (max-width: 1024px) {
     .container {
         padding: 0 1.5rem;
@@ -568,7 +563,6 @@ tr:hover {
     }
 }
 
-/* Mobile Navigation */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -683,7 +677,6 @@ tr:hover {
     }
 }
 
-/* Small Mobile */
 @media (max-width: 480px) {
     .navbar {
         padding: 1rem 3%;
